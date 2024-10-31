@@ -68,6 +68,8 @@ function Navbar() {
         </button>
         
         </Link>
+
+        <a href="https://server-yobr.onrender.com/admin/">Admin</a>
       </ul>
       
     </div>
