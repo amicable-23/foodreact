@@ -11,7 +11,7 @@ function Navbar() {
 
   useEffect(() => {
    if (localStorage.getItem('token') != null) {
-    axios.get("http://localhost:8000/fetchuser/", {
+    axios.get("https://server-yobr.onrender.com/fetchuser/", {
       headers:{
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -51,7 +51,7 @@ function Navbar() {
          user?.image == null ?
          <h2>{user?.first_name}</h2>
          :
-         <img style={{height: "50px", width:"50px"}} src={"http://localhost:8000"+user?.image} alt=""/>
+         <img style={{height: "50px", width:"50px"}} src={"https://server-yobr.onrender.com"+user?.image} alt=""/>
         }
        
         <Link to="/cart" className="nav-item">

@@ -11,7 +11,7 @@ function Signup() {
     e.preventDefault()
     let data = new FormData(e.currentTarget)
   
-    axios.post("http://localhost:8000/signup/", data)
+    axios.post("https://server-yobr.onrender.com/signup/", data)
     .then((res) => {
       alert("signup successfully")
       navigate("/")
